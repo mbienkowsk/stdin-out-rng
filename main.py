@@ -19,7 +19,7 @@ def parse_args() -> Namespace:
     parser.add_argument(
         "generator_launch_cmd",
         type=str,
-        default="python3 number-generator.py",
+        default="python3 number_generator.py",
         nargs="?",
         help="Command that, when launched, runs the random number generator",
     )

@@ -6,7 +6,7 @@ To run:
 python3 main.py
 ```
 
-### Program A (`number-generator.py`)
+### Program A (`number_generator.py`)
 
 A simple program parsing given pagebreak-separated commands from the stdin and responding to them.
 Made to be extensible and readable using a registering decorator. It's used to generate random ints
