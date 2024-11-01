@@ -3,7 +3,7 @@ from random import randint
 from collections import defaultdict
 from sys import stdin, stdout
 
-# Default command callback - one that does nothing
+# Registered commands. Default command callback - one that does nothing
 COMMANDS: defaultdict[str, Callable] = defaultdict(lambda: lambda: ...)
 
 

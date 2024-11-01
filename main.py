@@ -1,7 +1,7 @@
 from argparse import ArgumentParser, Namespace
 from statistics import mean, median
 
-from controller import (
+from src.controller import (
     generate_randint,
     random_number_generator,
     read_message,
@@ -19,7 +19,7 @@ def parse_args() -> Namespace:
     parser.add_argument(
         "generator_launch_cmd",
         type=str,
-        default="python3 number_generator.py",
+        default="python3 src/number_generator.py",
         nargs="?",
         help="Command that, when launched, runs the random number generator",
     )
