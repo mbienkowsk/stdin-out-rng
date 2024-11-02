@@ -12,7 +12,15 @@ Ran by:
 python3 main.py
 ```
 
-Tests ran by:
+To test, install the required packages:
+
+```shell
+pip install -r requirements.txt  
+```
+
+or just `pip install pyright`
+
+and run unit tests:
 
 ```shell
 pytest
