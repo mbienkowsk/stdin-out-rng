@@ -34,14 +34,15 @@ def shutdown():
     raise SystemExit(0)
 
 
-def main():
-    """Waits for the messages coming in stdin and executes commands based on them"""
-
-    while True:
-        cmd = stdin.readline().strip("\n")
-        callback = COMMANDS[cmd]
-        callback()
+def process_command():
+    """Reads a single command from stdin and executes
+    the corresponding callback"""
+    cmd = stdin.readline().strip("\n")
+    callback = COMMANDS[cmd]
+    callback()
 
 
 if __name__ == "__main__":
-    main()
+    # Process commands in a loop until Shutdown is received
+    while True:
+        process_command()
